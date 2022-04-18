@@ -1,0 +1,518 @@
+form {
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 25px;
+	height: 100%;
+	width:100%;
+}
+input {
+	background-color: lightGrey;
+	padding: 10px 10px;
+	margin: 5px;
+	width: 100%;
+	border: none;
+}
+button {
+	border-radius: 50px;
+	border: 1px solid;
+	background-color: darkBlue;
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 10px 50px;
+	letter-spacing: 2px;
+	transition: 0.05s;
+}
+
+button:active {
+	transform: scale(0.75);
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+
+form.contact-form {	
+	width:30%;
+	height:70%;
+	background-color: darkBlue;
+	color: white;
+	border-color: grey;
+	border-radius: 5px;
+	overflow: hidden;
+	min-height: 500px;
+  position: absolute;
+  float: center;
+}
+textarea {
+	background-color: white;
+	padding: 10px 10px;
+	margin: 5px;
+	width: 100%;
+	border: none;
+}
+
+
+
+#taskbar {
+    background-color: #73A5C6;
+  overflow: hidden;
+  width: 100%; 
+  top: 0;
+    padding: 100px 50px;
+    transition: 1.25s;
+    position: fixed;
+    z-index: 1;
+}
+
+#taskbar #logo {
+  float: left;
+    transition: 1.25s;
+}
+
+#taskbar a:hover {
+    cursor: pointer;
+}
+
+#taskbarRight {
+    float: right;
+}
+
+
+.fa-shopping-cart, .fa-user {
+  color: black;
+  font-size: 35px;
+  padding-left:25px;
+}
+
+
+.sidebarNav {
+  height: 100%;
+  width: 0%;
+    top: 0;
+  right: 0;
+  text-align: center;
+  background-color: #1E3F66;
+  transition: 0.5s;
+  position: fixed;
+  z-index: 2;
+  overflow-x: hidden;
+  padding-top: 75px; 
+}
+
+.sidebarNav a, .dropButton {
+  padding: 8px;
+  font-size: 20px;
+  width: 100%;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: #f2f2f2;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.sidebarNav a:hover, .dropButton:hover {
+  font-weight: bold;
+  color: #CCCCCC;
+}
+
+.sidebarNav .closeBar {
+  position: absolute;
+  top: 10px;
+    font-size: 45px;
+    right: 95px;
+}
+
+.dropList {
+  display: none;
+  padding: 1px 0px 15px 0px;
+}
+
+.moto1, .moto2 {
+    position: relative;
+    opacity: 0.95;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.moto1 {
+    background-image: url("motophones.jpg");
+    min-height: 550px;
+  }
+
+  
+* {box-sizing: border-box; }
+
+h1 {
+	font-weight: bold;
+	margin: 0;
+	text-align: center;
+	
+}
+p {
+	font-size: 15px;
+	font-family: arial;
+	font-weight: bold;
+	line-height: 18px;
+	margin: 20px 0px;
+}
+
+  .response {
+  width: 100%;
+  height: auto;
+  }
+
+ul {
+  column-count: 3;
+  column-gap: 25px;
+  font-size:20px;
+}
+
+#buyButton {
+display: none;
+position: fixed;
+bottom: 25px;
+right: 25px;
+z-index: 100;
+font-size: 20px;
+border: none;
+outline: none;
+background-color: darkBlue;
+color: white;
+cursor: pointer;
+padding: 15px 30px;
+border-radius: 10px;
+}
+
+#buyButton:hover {
+background-color: blue;
+}
+
+    
+img {
+	vertical-align: middle;
+	width: 100%;
+}
+.slideshow {
+	text-align:center;
+	position: relative;
+	width: 75%;
+	margin: auto;
+}
+
+.dash {
+  	height: 5px;
+  	width: 20px;
+  	margin: 2px;
+  	background-color: lightGrey;
+  	border-radius: 25%;
+  	display: inline-block;
+  	transition: 1.5s ;
+}
+.active {
+  	background-color: black;
+}
+.poster {
+  	animation-name: slideIn;
+  	animation-duration: 0.5s;
+} 
+@keyframes slideIn {
+  	from {
+  	  margin-left: 100%;
+  	  width: 100%; 
+  	}
+
+  	to {
+  	  margin-left: 0%;
+  	  width: 100%;
+  	}
+}
+.accessoriesImg {
+	position: relative;
+	width: 35%;
+	padding-top: 75px;
+}
+.slideImg {
+	width: 100%;
+	height: auto;
+}
+.slideOver {
+	position: absolute;
+  	overflow: hidden;
+  	background-color: #1E3F6690;
+  	width: 100%;
+  	height:0;
+  	right: 0;
+  	left: 0;
+	top: 75px;
+  	bottom: 100%;
+  	transition: 0.5s;
+}
+.accessoriesImg:hover .slideOver {
+  	bottom: 0;
+  	height: 87%;
+}
+.text {
+  	color: white;
+  	font-size: 50px;
+	font-family: arial;
+	font-weight: bold;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	text-align: center;
+}
+
+
+.buyContainer {
+    width: 50%;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+  }
+  
+  .phone {
+    width: 50%;
+    position: relative;
+  }
+   
+  .descript {
+    width: 50%;
+    margin-top: 60px;
+  }
+  
+   
+  .description { 
+    margin-bottom: 50px;
+  }
+  
+  .choose {
+    margin-bottom: 50px;
+  }
+   
+  .choose button {
+    border: 2px solid darkBlue;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    font-size: 15px;
+    background-color: #BCD2E8;
+    color: darkBlue;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+   
+  .choose button:hover,
+  .choose button:active,
+  .choose button:focus {
+    background-color: darkBlue;
+    color: white;
+    outline: none;
+  }
+   
+   
+  .price span {
+    font-size: 30px;
+    font-weight: bold;
+    color: darkBlue;
+    margin-right: 50px;
+    padding-top:300px;
+  }
+   
+  .cart {
+    display: inline-block;
+    background-color: darkBlue;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: 0.5s;
+  }
+  .cart:hover {
+    background-color: #BCD2E8;
+    color: darkBlue;
+    border: 2px solid darkBlue;
+    border-radius: 5px;
+  }
+  .product{
+      padding: 0px 25px 25px 25px;
+      width: 40%;
+      display: flex;
+      overflow-x: hidden;
+      background-color: #BCD2E8;
+      text-align: center;
+  }
+  .card{
+      width: 250px;
+      height: 450px;
+      margin-right: 40px;
+      flex: 0 0 auto;
+  }
+  
+  .image{
+      position: relative;
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+  }
+  
+  
+  .cartBtn{
+      background-color: darkBlue;
+      color: white;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px;
+      width: 80%;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      transition: 0.5s;
+      cursor: pointer;
+      opacity: 0;
+  }
+  
+  .card:hover .cartBtn{
+      opacity: 1;
+  }
+  
+  .cartBtn:hover{
+      background-color: transparent;
+      color: darkBlue;
+      border: 2px solid darkBlue;
+      border-radius: 5px;
+  }
+  
+  .info{
+      width: 100%;
+      height: 100px;
+      padding-top: 10px;
+      text-align: center;
+  }
+  
+  
+  .accessPrice{
+      color: darkBlue;
+      font-weight: bold;
+      font-size: 30px;
+  }
+
+  .about {
+    width: 30%;
+    padding: 0 10px;
+    float: left;
+    box-sizing: border-box;
+  }
+  
+  .shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 25px;
+  }
+  
+  
+  .aboutcon {
+    padding: 15px;
+    background-color: #00498D;
+  }
+
+  *{box-sizing: border-box;}
+
+  body,html {
+  height: 100%;
+  margin: 0;
+  }
+
+  .content {
+  margin-top: 5px;
+  padding: 125px 25px 1000px 10px;
+  background-color: #BCD2E8;
+  color: white;
+  }
+
+.popup {
+  display: none; /* Hides box when page is opened */
+  position: fixed; /* keeps in one place */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  top: 0; /*no margin in the top*/
+  overflow: auto; /* shows scroll if text is more than the box */
+  padding-top: 10px; /* how far from the top it is */
+  z-index: 1000; /* appears ontop of page */
+  background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
+
+}
+
+/* CSS for inside the box */
+.tncContent {
+  margin: auto; /* centres the box in the middle */
+  padding: 20px;
+  width: 80%;
+  background-color: white /* Black w/ opacity */
+
+}
+
+/* The Close Button */
+.exit {
+  color: darkBlue;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.exit:hover{
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+  
+.bg1, .bg2, .bg3, .bg4 {
+  position: relative;
+  opacity: 0.95;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg1 {
+  background-image: url("iPhoneScreens.jpg");
+  min-height: 550px;
+}
+.bg2 {
+  background-image: url("waterproof.png");
+  min-height: 500px;
+  width: 100%;
+}
+.bg3 {
+  background-image: url("iPhones.png");
+  min-height: 400px;
+}
+.bg4 {
+  background-image: url("hardware.jpg");
+  min-height: 400px;
+}
+.caption {
+  position: absolute;
+  text-align: center;
+  color: white;
+  font-size: 200px;
+  width: 100%;
+  top: 25%;
+}
+
+.animateTop {
+  position: relative;
+  animation: animatetop 0.75s;
+} @keyframes animatetop{from{top:-500px;opacity:0} to{top:0;opacity:1}}
+
